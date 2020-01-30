@@ -1,0 +1,583 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C536831A23E313D800175A34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C536831923E313D800175A34 /* AppDelegate.swift */; };
+		C536831C23E313D800175A34 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C536831B23E313D800175A34 /* ViewController.swift */; };
+		C536831F23E313D800175A34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C536831D23E313D800175A34 /* Main.storyboard */; };
+		C536832123E313D900175A34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C536832023E313D900175A34 /* Assets.xcassets */; };
+		C536832423E313D900175A34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C536832223E313D900175A34 /* LaunchScreen.storyboard */; };
+		C536832F23E313D900175A34 /* SooGreyhoundsMobileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C536832E23E313D900175A34 /* SooGreyhoundsMobileTests.swift */; };
+		C536833A23E313D900175A34 /* SooGreyhoundsMobileUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C536833923E313D900175A34 /* SooGreyhoundsMobileUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C536832B23E313D900175A34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C536830E23E313D800175A34 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C536831523E313D800175A34;
+			remoteInfo = SooGreyhoundsMobile;
+		};
+		C536833623E313D900175A34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C536830E23E313D800175A34 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C536831523E313D800175A34;
+			remoteInfo = SooGreyhoundsMobile;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C536831623E313D800175A34 /* SooGreyhoundsMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SooGreyhoundsMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C536831923E313D800175A34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C536831B23E313D800175A34 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C536831E23E313D800175A34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C536832023E313D900175A34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C536832323E313D900175A34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C536832523E313D900175A34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C536832A23E313D900175A34 /* SooGreyhoundsMobileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SooGreyhoundsMobileTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C536832E23E313D900175A34 /* SooGreyhoundsMobileTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SooGreyhoundsMobileTests.swift; sourceTree = "<group>"; };
+		C536833023E313D900175A34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C536833523E313D900175A34 /* SooGreyhoundsMobileUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SooGreyhoundsMobileUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C536833923E313D900175A34 /* SooGreyhoundsMobileUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SooGreyhoundsMobileUITests.swift; sourceTree = "<group>"; };
+		C536833B23E313D900175A34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C536831323E313D800175A34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C536832723E313D900175A34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C536833223E313D900175A34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C536830D23E313D800175A34 = {
+			isa = PBXGroup;
+			children = (
+				C536831823E313D800175A34 /* SooGreyhoundsMobile */,
+				C536832D23E313D900175A34 /* SooGreyhoundsMobileTests */,
+				C536833823E313D900175A34 /* SooGreyhoundsMobileUITests */,
+				C536831723E313D800175A34 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C536831723E313D800175A34 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C536831623E313D800175A34 /* SooGreyhoundsMobile.app */,
+				C536832A23E313D900175A34 /* SooGreyhoundsMobileTests.xctest */,
+				C536833523E313D900175A34 /* SooGreyhoundsMobileUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C536831823E313D800175A34 /* SooGreyhoundsMobile */ = {
+			isa = PBXGroup;
+			children = (
+				C536831923E313D800175A34 /* AppDelegate.swift */,
+				C536831B23E313D800175A34 /* ViewController.swift */,
+				C536831D23E313D800175A34 /* Main.storyboard */,
+				C536832023E313D900175A34 /* Assets.xcassets */,
+				C536832223E313D900175A34 /* LaunchScreen.storyboard */,
+				C536832523E313D900175A34 /* Info.plist */,
+			);
+			path = SooGreyhoundsMobile;
+			sourceTree = "<group>";
+		};
+		C536832D23E313D900175A34 /* SooGreyhoundsMobileTests */ = {
+			isa = PBXGroup;
+			children = (
+				C536832E23E313D900175A34 /* SooGreyhoundsMobileTests.swift */,
+				C536833023E313D900175A34 /* Info.plist */,
+			);
+			path = SooGreyhoundsMobileTests;
+			sourceTree = "<group>";
+		};
+		C536833823E313D900175A34 /* SooGreyhoundsMobileUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C536833923E313D900175A34 /* SooGreyhoundsMobileUITests.swift */,
+				C536833B23E313D900175A34 /* Info.plist */,
+			);
+			path = SooGreyhoundsMobileUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C536831523E313D800175A34 /* SooGreyhoundsMobile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C536833E23E313D900175A34 /* Build configuration list for PBXNativeTarget "SooGreyhoundsMobile" */;
+			buildPhases = (
+				C536831223E313D800175A34 /* Sources */,
+				C536831323E313D800175A34 /* Frameworks */,
+				C536831423E313D800175A34 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SooGreyhoundsMobile;
+			productName = SooGreyhoundsMobile;
+			productReference = C536831623E313D800175A34 /* SooGreyhoundsMobile.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C536832923E313D900175A34 /* SooGreyhoundsMobileTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C536834123E313D900175A34 /* Build configuration list for PBXNativeTarget "SooGreyhoundsMobileTests" */;
+			buildPhases = (
+				C536832623E313D900175A34 /* Sources */,
+				C536832723E313D900175A34 /* Frameworks */,
+				C536832823E313D900175A34 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C536832C23E313D900175A34 /* PBXTargetDependency */,
+			);
+			name = SooGreyhoundsMobileTests;
+			productName = SooGreyhoundsMobileTests;
+			productReference = C536832A23E313D900175A34 /* SooGreyhoundsMobileTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C536833423E313D900175A34 /* SooGreyhoundsMobileUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C536834423E313D900175A34 /* Build configuration list for PBXNativeTarget "SooGreyhoundsMobileUITests" */;
+			buildPhases = (
+				C536833123E313D900175A34 /* Sources */,
+				C536833223E313D900175A34 /* Frameworks */,
+				C536833323E313D900175A34 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C536833723E313D900175A34 /* PBXTargetDependency */,
+			);
+			name = SooGreyhoundsMobileUITests;
+			productName = SooGreyhoundsMobileUITests;
+			productReference = C536833523E313D900175A34 /* SooGreyhoundsMobileUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C536830E23E313D800175A34 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "sandeep kaur";
+				TargetAttributes = {
+					C536831523E313D800175A34 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					C536832923E313D900175A34 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = C536831523E313D800175A34;
+					};
+					C536833423E313D900175A34 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = C536831523E313D800175A34;
+					};
+				};
+			};
+			buildConfigurationList = C536831123E313D800175A34 /* Build configuration list for PBXProject "SooGreyhoundsMobile" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C536830D23E313D800175A34;
+			productRefGroup = C536831723E313D800175A34 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C536831523E313D800175A34 /* SooGreyhoundsMobile */,
+				C536832923E313D900175A34 /* SooGreyhoundsMobileTests */,
+				C536833423E313D900175A34 /* SooGreyhoundsMobileUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C536831423E313D800175A34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C536832423E313D900175A34 /* LaunchScreen.storyboard in Resources */,
+				C536832123E313D900175A34 /* Assets.xcassets in Resources */,
+				C536831F23E313D800175A34 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C536832823E313D900175A34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C536833323E313D900175A34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C536831223E313D800175A34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C536831C23E313D800175A34 /* ViewController.swift in Sources */,
+				C536831A23E313D800175A34 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C536832623E313D900175A34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C536832F23E313D900175A34 /* SooGreyhoundsMobileTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C536833123E313D900175A34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C536833A23E313D900175A34 /* SooGreyhoundsMobileUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C536832C23E313D900175A34 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C536831523E313D800175A34 /* SooGreyhoundsMobile */;
+			targetProxy = C536832B23E313D900175A34 /* PBXContainerItemProxy */;
+		};
+		C536833723E313D900175A34 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C536831523E313D800175A34 /* SooGreyhoundsMobile */;
+			targetProxy = C536833623E313D900175A34 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C536831D23E313D800175A34 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C536831E23E313D800175A34 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C536832223E313D900175A34 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C536832323E313D900175A34 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C536833C23E313D900175A34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C536833D23E313D900175A34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C536833F23E313D900175A34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SooGreyhoundsMobile/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.soogreyhounds.SooGreyhoundsMobile;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C536834023E313D900175A34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SooGreyhoundsMobile/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.soogreyhounds.SooGreyhoundsMobile;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C536834223E313D900175A34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SooGreyhoundsMobileTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.soogreyhounds.SooGreyhoundsMobileTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SooGreyhoundsMobile.app/SooGreyhoundsMobile";
+			};
+			name = Debug;
+		};
+		C536834323E313D900175A34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SooGreyhoundsMobileTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.soogreyhounds.SooGreyhoundsMobileTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SooGreyhoundsMobile.app/SooGreyhoundsMobile";
+			};
+			name = Release;
+		};
+		C536834523E313D900175A34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SooGreyhoundsMobileUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.soogreyhounds.SooGreyhoundsMobileUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SooGreyhoundsMobile;
+			};
+			name = Debug;
+		};
+		C536834623E313D900175A34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SooGreyhoundsMobileUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.soogreyhounds.SooGreyhoundsMobileUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SooGreyhoundsMobile;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C536831123E313D800175A34 /* Build configuration list for PBXProject "SooGreyhoundsMobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C536833C23E313D900175A34 /* Debug */,
+				C536833D23E313D900175A34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C536833E23E313D900175A34 /* Build configuration list for PBXNativeTarget "SooGreyhoundsMobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C536833F23E313D900175A34 /* Debug */,
+				C536834023E313D900175A34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C536834123E313D900175A34 /* Build configuration list for PBXNativeTarget "SooGreyhoundsMobileTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C536834223E313D900175A34 /* Debug */,
+				C536834323E313D900175A34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C536834423E313D900175A34 /* Build configuration list for PBXNativeTarget "SooGreyhoundsMobileUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C536834523E313D900175A34 /* Debug */,
+				C536834623E313D900175A34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C536830E23E313D800175A34 /* Project object */;
+}
