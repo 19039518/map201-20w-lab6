@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		C536831A23E313D800175A34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C536831923E313D800175A34 /* AppDelegate.swift */; };
-		C536831C23E313D800175A34 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C536831B23E313D800175A34 /* ViewController.swift */; };
 		C536831F23E313D800175A34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C536831D23E313D800175A34 /* Main.storyboard */; };
 		C536832123E313D900175A34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C536832023E313D900175A34 /* Assets.xcassets */; };
 		C536832423E313D900175A34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C536832223E313D900175A34 /* LaunchScreen.storyboard */; };
 		C536832F23E313D900175A34 /* SooGreyhoundsMobileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C536832E23E313D900175A34 /* SooGreyhoundsMobileTests.swift */; };
 		C536833A23E313D900175A34 /* SooGreyhoundsMobileUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C536833923E313D900175A34 /* SooGreyhoundsMobileUITests.swift */; };
+		C536834823E3141E00175A34 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C536834723E3141E00175A34 /* PhotosViewController.swift */; };
+		C536834A23E31A2C00175A34 /* SooGreyhoundsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C536834923E31A2C00175A34 /* SooGreyhoundsAPI.swift */; };
+		C536834C23E31D7B00175A34 /* PhotoStore .swift in Sources */ = {isa = PBXBuildFile; fileRef = C536834B23E31D7B00175A34 /* PhotoStore .swift */; };
+		C536834E23E31EF400175A34 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C536834D23E31EF400175A34 /* Photo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +39,6 @@
 /* Begin PBXFileReference section */
 		C536831623E313D800175A34 /* SooGreyhoundsMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SooGreyhoundsMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C536831923E313D800175A34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C536831B23E313D800175A34 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C536831E23E313D800175A34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C536832023E313D900175A34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C536832323E313D900175A34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +49,10 @@
 		C536833523E313D900175A34 /* SooGreyhoundsMobileUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SooGreyhoundsMobileUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C536833923E313D900175A34 /* SooGreyhoundsMobileUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SooGreyhoundsMobileUITests.swift; sourceTree = "<group>"; };
 		C536833B23E313D900175A34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C536834723E3141E00175A34 /* PhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
+		C536834923E31A2C00175A34 /* SooGreyhoundsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SooGreyhoundsAPI.swift; sourceTree = "<group>"; };
+		C536834B23E31D7B00175A34 /* PhotoStore .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PhotoStore .swift"; sourceTree = "<group>"; };
+		C536834D23E31EF400175A34 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +83,9 @@
 		C536830D23E313D800175A34 = {
 			isa = PBXGroup;
 			children = (
+				C536834D23E31EF400175A34 /* Photo.swift */,
+				C536834B23E31D7B00175A34 /* PhotoStore .swift */,
+				C536834723E3141E00175A34 /* PhotosViewController.swift */,
 				C536831823E313D800175A34 /* SooGreyhoundsMobile */,
 				C536832D23E313D900175A34 /* SooGreyhoundsMobileTests */,
 				C536833823E313D900175A34 /* SooGreyhoundsMobileUITests */,
@@ -98,8 +107,8 @@
 			isa = PBXGroup;
 			children = (
 				C536831923E313D800175A34 /* AppDelegate.swift */,
-				C536831B23E313D800175A34 /* ViewController.swift */,
 				C536831D23E313D800175A34 /* Main.storyboard */,
+				C536834923E31A2C00175A34 /* SooGreyhoundsAPI.swift */,
 				C536832023E313D900175A34 /* Assets.xcassets */,
 				C536832223E313D900175A34 /* LaunchScreen.storyboard */,
 				C536832523E313D900175A34 /* Info.plist */,
@@ -256,8 +265,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C536831C23E313D800175A34 /* ViewController.swift in Sources */,
+				C536834A23E31A2C00175A34 /* SooGreyhoundsAPI.swift in Sources */,
+				C536834823E3141E00175A34 /* PhotosViewController.swift in Sources */,
 				C536831A23E313D800175A34 /* AppDelegate.swift in Sources */,
+				C536834C23E31D7B00175A34 /* PhotoStore .swift in Sources */,
+				C536834E23E31EF400175A34 /* Photo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
