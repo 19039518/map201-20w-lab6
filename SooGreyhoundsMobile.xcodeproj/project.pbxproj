@@ -17,6 +17,8 @@
 		C536834A23E31A2C00175A34 /* SooGreyhoundsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C536834923E31A2C00175A34 /* SooGreyhoundsAPI.swift */; };
 		C536834C23E31D7B00175A34 /* PhotoStore .swift in Sources */ = {isa = PBXBuildFile; fileRef = C536834B23E31D7B00175A34 /* PhotoStore .swift */; };
 		C536834E23E31EF400175A34 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C536834D23E31EF400175A34 /* Photo.swift */; };
+		C557C74423EC5900009E7DB4 /* PhotoDataSource .swift in Sources */ = {isa = PBXBuildFile; fileRef = C557C74323EC5900009E7DB4 /* PhotoDataSource .swift */; };
+		C557C74623EC5EDE009E7DB4 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C557C74523EC5EDE009E7DB4 /* PhotoCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		C536834923E31A2C00175A34 /* SooGreyhoundsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SooGreyhoundsAPI.swift; sourceTree = "<group>"; };
 		C536834B23E31D7B00175A34 /* PhotoStore .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PhotoStore .swift"; sourceTree = "<group>"; };
 		C536834D23E31EF400175A34 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		C557C74323EC5900009E7DB4 /* PhotoDataSource .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PhotoDataSource .swift"; sourceTree = "<group>"; };
+		C557C74523EC5EDE009E7DB4 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,8 @@
 		C536830D23E313D800175A34 = {
 			isa = PBXGroup;
 			children = (
+				C557C74523EC5EDE009E7DB4 /* PhotoCollectionViewCell.swift */,
+				C557C74323EC5900009E7DB4 /* PhotoDataSource .swift */,
 				C536834D23E31EF400175A34 /* Photo.swift */,
 				C536834B23E31D7B00175A34 /* PhotoStore .swift */,
 				C536834723E3141E00175A34 /* PhotosViewController.swift */,
@@ -265,9 +271,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C557C74423EC5900009E7DB4 /* PhotoDataSource .swift in Sources */,
 				C536834A23E31A2C00175A34 /* SooGreyhoundsAPI.swift in Sources */,
 				C536834823E3141E00175A34 /* PhotosViewController.swift in Sources */,
 				C536831A23E313D800175A34 /* AppDelegate.swift in Sources */,
+				C557C74623EC5EDE009E7DB4 /* PhotoCollectionViewCell.swift in Sources */,
 				C536834C23E31D7B00175A34 /* PhotoStore .swift in Sources */,
 				C536834E23E31EF400175A34 /* Photo.swift in Sources */,
 			);
