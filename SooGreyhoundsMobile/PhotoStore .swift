@@ -26,21 +26,29 @@ class PhotoStore {
         return URLSession(configuration: config)
     }()
     func fetchLatestPhotos(completion: @escaping (PhotosResult) -> Void) {
-
+        
         let url = SooGreyhoundsAPI.latestPhotosURL
+        
         let request = URLRequest(url: url)
+        
         let task = session.dataTask(with: request) {
+            
             (data, response, error) -> Void in
+          
+            
             let result = self.processPhotosRequest(data: data, error: error)
-            if case let .success(image) = result {
-                self.imageStore.setImage(image, forKey: photoKey)
-            }
+            
             OperationQueue.main.addOperation {
                 completion(result)
+                
+                
+                
             }
-            }
-       
+            
+        }
+        
         task.resume()
+        
     }
     private func processPhotosRequest(data: Data?, error: Error?) -> PhotosResult {
         guard let jsonData = data else {
@@ -61,6 +69,9 @@ class PhotoStore {
         let task = session.dataTask(with: request) {
             (data, response, error) -> Void in
             let result = self.processImageRequest(data: data, error: error)
+            if case let .success(image) = result {
+                self.imageStore.setImage(image, forKey: photoKey)
+            }
             OperationQueue.main.addOperation {
             completion(result)
             }
