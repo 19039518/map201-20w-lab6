@@ -16,11 +16,13 @@
 		C536834823E3141E00175A34 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C536834723E3141E00175A34 /* PhotosViewController.swift */; };
 		C536834A23E31A2C00175A34 /* SooGreyhoundsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C536834923E31A2C00175A34 /* SooGreyhoundsAPI.swift */; };
 		C536834C23E31D7B00175A34 /* PhotoStore .swift in Sources */ = {isa = PBXBuildFile; fileRef = C536834B23E31D7B00175A34 /* PhotoStore .swift */; };
-		C536834E23E31EF400175A34 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C536834D23E31EF400175A34 /* Photo.swift */; };
 		C557C74423EC5900009E7DB4 /* PhotoDataSource .swift in Sources */ = {isa = PBXBuildFile; fileRef = C557C74323EC5900009E7DB4 /* PhotoDataSource .swift */; };
 		C557C74623EC5EDE009E7DB4 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C557C74523EC5EDE009E7DB4 /* PhotoCollectionViewCell.swift */; };
 		C557C74823EC7EFD009E7DB4 /* ImageStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C557C74723EC7EFD009E7DB4 /* ImageStore.swift */; };
 		C557C74A23EC7FD3009E7DB4 /* PhotoInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C557C74923EC7FD3009E7DB4 /* PhotoInfoViewController.swift */; };
+		C557C75323F591C1009E7DB4 /* SooGreyhounds.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C557C75123F591C1009E7DB4 /* SooGreyhounds.xcdatamodeld */; };
+		C557C75623F59277009E7DB4 /* Photo+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C557C75423F59277009E7DB4 /* Photo+CoreDataClass.swift */; };
+		C557C75723F59277009E7DB4 /* Photo+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C557C75523F59277009E7DB4 /* Photo+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,11 +58,13 @@
 		C536834723E3141E00175A34 /* PhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
 		C536834923E31A2C00175A34 /* SooGreyhoundsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SooGreyhoundsAPI.swift; sourceTree = "<group>"; };
 		C536834B23E31D7B00175A34 /* PhotoStore .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PhotoStore .swift"; sourceTree = "<group>"; };
-		C536834D23E31EF400175A34 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		C557C74323EC5900009E7DB4 /* PhotoDataSource .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PhotoDataSource .swift"; sourceTree = "<group>"; };
 		C557C74523EC5EDE009E7DB4 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		C557C74723EC7EFD009E7DB4 /* ImageStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageStore.swift; sourceTree = "<group>"; };
 		C557C74923EC7FD3009E7DB4 /* PhotoInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoInfoViewController.swift; sourceTree = "<group>"; };
+		C557C75223F591C1009E7DB4 /* SooGreyhounds.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SooGreyhounds.xcdatamodel; sourceTree = "<group>"; };
+		C557C75423F59277009E7DB4 /* Photo+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Photo+CoreDataClass.swift"; sourceTree = "<group>"; };
+		C557C75523F59277009E7DB4 /* Photo+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Photo+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +95,8 @@
 		C536830D23E313D800175A34 = {
 			isa = PBXGroup;
 			children = (
+				C557C75423F59277009E7DB4 /* Photo+CoreDataClass.swift */,
+				C557C75523F59277009E7DB4 /* Photo+CoreDataProperties.swift */,
 				C536831823E313D800175A34 /* SooGreyhoundsMobile */,
 				C536832D23E313D900175A34 /* SooGreyhoundsMobileTests */,
 				C536833823E313D900175A34 /* SooGreyhoundsMobileUITests */,
@@ -115,7 +121,6 @@
 				C557C74723EC7EFD009E7DB4 /* ImageStore.swift */,
 				C557C74523EC5EDE009E7DB4 /* PhotoCollectionViewCell.swift */,
 				C557C74323EC5900009E7DB4 /* PhotoDataSource .swift */,
-				C536834D23E31EF400175A34 /* Photo.swift */,
 				C536834B23E31D7B00175A34 /* PhotoStore .swift */,
 				C536834723E3141E00175A34 /* PhotosViewController.swift */,
 				C536831923E313D800175A34 /* AppDelegate.swift */,
@@ -124,6 +129,7 @@
 				C536832023E313D900175A34 /* Assets.xcassets */,
 				C536832223E313D900175A34 /* LaunchScreen.storyboard */,
 				C536832523E313D900175A34 /* Info.plist */,
+				C557C75123F591C1009E7DB4 /* SooGreyhounds.xcdatamodeld */,
 			);
 			path = SooGreyhoundsMobile;
 			sourceTree = "<group>";
@@ -277,15 +283,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C557C75623F59277009E7DB4 /* Photo+CoreDataClass.swift in Sources */,
 				C557C74423EC5900009E7DB4 /* PhotoDataSource .swift in Sources */,
 				C557C74A23EC7FD3009E7DB4 /* PhotoInfoViewController.swift in Sources */,
 				C536834A23E31A2C00175A34 /* SooGreyhoundsAPI.swift in Sources */,
 				C536834823E3141E00175A34 /* PhotosViewController.swift in Sources */,
 				C536831A23E313D800175A34 /* AppDelegate.swift in Sources */,
+				C557C75323F591C1009E7DB4 /* SooGreyhounds.xcdatamodeld in Sources */,
 				C557C74823EC7EFD009E7DB4 /* ImageStore.swift in Sources */,
+				C557C75723F59277009E7DB4 /* Photo+CoreDataProperties.swift in Sources */,
 				C557C74623EC5EDE009E7DB4 /* PhotoCollectionViewCell.swift in Sources */,
 				C536834C23E31D7B00175A34 /* PhotoStore .swift in Sources */,
-				C536834E23E31EF400175A34 /* Photo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -606,6 +614,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C557C75123F591C1009E7DB4 /* SooGreyhounds.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C557C75223F591C1009E7DB4 /* SooGreyhounds.xcdatamodel */,
+			);
+			currentVersion = C557C75223F591C1009E7DB4 /* SooGreyhounds.xcdatamodel */;
+			path = SooGreyhounds.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = C536830E23E313D800175A34 /* Project object */;
 }

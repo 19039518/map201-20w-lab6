@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import CoreData
 enum Method: String {
     case latestPhotos = "soogreyhounds.photos.getList"
 }
@@ -19,7 +20,7 @@ struct SooGreyhoundsAPI {
         formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
         return formatter
     }()
-    private static func photo(fromJSON json: [String : Any]) -> Photo? {
+    private static func photo(fromJSON json: [String : Any], into context: NSManagedObjectContext) -> Photo? {
         guard
             let photoID = json["id"] as? String,
             let title = json["title"] as? String,
@@ -30,9 +31,27 @@ struct SooGreyhoundsAPI {
                 // Don't have enough information to construct a Photo
                 return nil
         }
-        return Photo(title: title, photoID: photoID, remoteURL: url, dateTaken: dateTaken)
+        let fetchRequest: NSFetchRequest<Photo> = Photo.fetchRequest()
+        let predicate = NSPredicate(format: "\(#keyPath(Photo.photoID)) == \(photoID)")
+        fetchRequest.predicate = predicate
+        var fetchedPhotos: [Photo]?
+        context.performAndWait {
+            fetchedPhotos = try? fetchRequest.execute()
+        }
+        if let existingPhoto = fetchedPhotos?.first {
+            return existingPhoto
+        }
+        var photo: Photo!
+        context.performAndWait {
+            photo = Photo(context: context)
+            photo.title = title
+            photo.photoID = photoID
+            photo.remoteURL = url as NSURL
+            photo.dateTaken = dateTaken as NSDate
+        }
+        return photo
     }
-    private static func sooGreyhoundsURL(method: Method, parameters: [String:String]?) -> URL {
+            private static func sooGreyhoundsURL(method: Method, parameters: [String:String]?) -> URL {
         var components = URLComponents(string: baseURLString)!
         var queryItems = [URLQueryItem]()
         let baseParams = [
@@ -57,7 +76,7 @@ struct SooGreyhoundsAPI {
     enum SooGreyhoundsError: Error {
         case invalidJSONData
     }
-    static func photos(fromJSON data: Data) -> PhotosResult {
+    static func photos(fromJSON data: Data, into context: NSManagedObjectContext) -> PhotosResult {
         do {
             let jsonObject = try JSONSerialization.jsonObject(with: data,
                                                               options: [])
@@ -70,7 +89,7 @@ struct SooGreyhoundsAPI {
             }
             var finalPhotos = [Photo]()
             for photoJSON in photosArray {
-                if let photo = photo(fromJSON: photoJSON) {
+                if let photo = photo(fromJSON: photoJSON,into: context) {
                     finalPhotos.append(photo)
                 }
             }

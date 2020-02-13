@@ -44,7 +44,18 @@ class PhotosViewController: UIViewController,UICollectionViewDelegate {
             preconditionFailure("Unexpected segue identifier.")
         }
     }
-    
+    private func updateDataSource() {
+        store.fetchAllPhotos {
+            (photosResult) in
+            switch photosResult {
+            case let .success(photos):
+                self.photoDataSource.photos = photos
+            case .failure:
+                self.photoDataSource.photos.removeAll()
+            }
+            self.collectionView.reloadSections(IndexSet(integer: 0))
+        }
+    }
         @IBOutlet var collectionView: UICollectionView!
     var store: PhotoStore!
     let photoDataSource = PhotoDataSource()
@@ -53,20 +64,15 @@ class PhotosViewController: UIViewController,UICollectionViewDelegate {
         super.viewDidLoad()
         collectionView.dataSource = photoDataSource
         collectionView.delegate = self
-        store.fetchLatestPhotos
-            {
-                (photosResult) -> Void in
-                switch photosResult {
-                case let .success(photos):
-                    print("Successfully found \(photos.count) photos.")
-                    self.photoDataSource.photos = photos
-                case let .failure(error):
-                    print("Error fetching latest photos: \(error)")
-                    self.photoDataSource.photos.removeAll()
-                }
-                self.collectionView.reloadSections(IndexSet(integer: 0))
+        updateDataSource()
+        store.fetchLatestPhotos{
+    (photosResult) -> Void in
         }
     }
 }
+
+
+
+
 
 
