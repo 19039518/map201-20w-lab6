@@ -2,7 +2,7 @@
 //  Photo+CoreDataProperties.swift
 //  SooGreyhoundsMobile
 //
-//  Created by Sandeep Kaur on 2020-02-13.
+//  Created by Sandeep Kaur on 2020-02-20.
 //  Copyright © 2020 sandeep kaur. All rights reserved.
 //
 //
@@ -21,5 +21,23 @@ extension Photo {
     @NSManaged public var title: String?
     @NSManaged public var remoteURL: NSURL?
     @NSManaged public var photoID: String?
+    @NSManaged public var tags: NSSet?
+
+}
+
+// MARK: Generated accessors for tags
+extension Photo {
+
+    @objc(addTagsObject:)
+    @NSManaged public func addToTags(_ value: Tag)
+
+    @objc(removeTagsObject:)
+    @NSManaged public func removeFromTags(_ value: Tag)
+
+    @objc(addTags:)
+    @NSManaged public func addToTags(_ values: NSSet)
+
+    @objc(removeTags:)
+    @NSManaged public func removeFromTags(_ values: NSSet)
 
 }
